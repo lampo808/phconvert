@@ -35,11 +35,12 @@ before_script:
     - cd notebooks
     - wget https://ndownloader.figshare.com/files/3350666 -O dsdna_d7d17_50_50_1.set
     - wget https://ndownloader.figshare.com/files/3350669 -O dsdna_d7d17_50_50_1.spc
-    - wget https://ndownloader.figshare.com/files/3350672 -O Pre.ht3
-    - wget https://ndownloader.figshare.com/files/3350663 -O 0023uLRpitc_NTP_20dT_0.5GndCl.sm
-
+    #- wget https://ndownloader.figshare.com/files/3350672 -O Pre.ht3
+    #- wget https://ndownloader.figshare.com/files/3350663 -O 0023uLRpitc_NTP_20dT_0.5GndCl.sm
+    - 'echo "import numpy" > test.py'
 script:
     - python -V
+    - python test.py
     - python $TRAVIS_BUILD_DIR/tests/nbrun.py
 
 sudo: false
