@@ -37,7 +37,7 @@ before_script:
     - wget https://ndownloader.figshare.com/files/3350669 -O dsdna_d7d17_50_50_1.spc
     #- wget https://ndownloader.figshare.com/files/3350672 -O Pre.ht3
     #- wget https://ndownloader.figshare.com/files/3350663 -O 0023uLRpitc_NTP_20dT_0.5GndCl.sm
-    - 'echo "import numpy" > test.py'
+    - 'echo "import numpy; print(numpy.__version__)" > test.py'
 script:
     - python -V
     - python test.py
