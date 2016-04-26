@@ -81,7 +81,7 @@ except IOError:
 # In[ ]:
 
 import matplotlib
-#matplotlib.use("Agg")
+matplotlib.use("Agg")
 
 
 # In[ ]:
