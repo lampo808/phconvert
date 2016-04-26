@@ -38,9 +38,6 @@ before_script:
     - wget https://ndownloader.figshare.com/files/3350663 -O 0023uLRpitc_NTP_20dT_0.5GndCl.sm
 
 script:
-    - python -V
-    - python print_versions.py
-    - python Convert_ns-ALEX_Becker-Hickl_files_to_Photon-HDF5.py
     - python $TRAVIS_BUILD_DIR/tests/nbrun.py
 
 sudo: false
